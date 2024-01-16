@@ -33,7 +33,7 @@ export default function Header() {
     setActiveLink(`#${id}`);
   };
 
-  const onToggleNavBar = () => setIsNavActive((prev) => !prev);
+  const toggleNavBar = () => setIsNavActive((prev) => !prev);
 
   return (
     <header>
@@ -54,7 +54,7 @@ export default function Header() {
         <button
           type="button"
           className="menu-toggle-btn cross-btn"
-          onClick={onToggleNavBar}
+          onClick={toggleNavBar}
         >
           <MdClear size={25} />
         </button>
@@ -62,7 +62,7 @@ export default function Header() {
         <button
           type="button"
           className="menu-toggle-btn"
-          onClick={onToggleNavBar}
+          onClick={toggleNavBar}
         >
           <RiMenu3Fill size={20} />
         </button>
