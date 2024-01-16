@@ -2,16 +2,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--clr-header-bg);
   color: white;
   padding: 1em;
   position: fixed;
-  inset: 0 0 auto 0;
-  backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
 header h3 {
   margin-block: 0;
-  z-index: 99;
+}
+header::before,
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  backdrop-filter: blur(5px);
 }
 nav {
   display: flex;
@@ -60,13 +72,12 @@ nav a:hover::after {
     display: grid;
     gap: 1em;
     position: absolute;
-    top: 0;
+    top: 56px;
     right: 0;
     width: 200px;
-    padding: 5em 1em 1.5em 1em;
+    padding: 1.5em 1em;
     border-bottom-left-radius: 7px;
-    flex-direction: column;
-    background-color: black;
+    background-color: var(--clr-header-bg);
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
   }

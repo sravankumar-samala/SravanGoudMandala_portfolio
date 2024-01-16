@@ -1,0 +1,26 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  place-items: stretch;
+  background-color: #efefef;
+}
+.hero-content-container {
+  align-self: center;
+}
+.hero-content-wrapper {
+  width: min(500px, 90%);
+  margin: 0 auto;
+}
+.hero-image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-image-container {
+    display: none;
+  }
+}
