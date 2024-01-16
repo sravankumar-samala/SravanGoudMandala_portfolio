@@ -11,6 +11,7 @@ header {
 }
 header h3 {
   margin-block: 0;
+  z-index: 99;
 }
 nav {
   display: flex;
