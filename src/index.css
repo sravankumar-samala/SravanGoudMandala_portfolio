@@ -45,15 +45,15 @@ button {
   cursor: pointer;
 }
 .app-container {
-  min-height: 100vh;
+  min-height: 100dvh;
   /* padding-inline: clamp(1em, 1.5vw, 2em); */
 }
 section {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
 }
 @media screen and (max-width: 768px) {
   section {
-    min-height: 80vh;
+    min-height: 80dvh;
   }
 }
