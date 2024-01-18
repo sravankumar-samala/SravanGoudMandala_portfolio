@@ -21,6 +21,7 @@
 
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -49,5 +50,10 @@ button {
 }
 section {
   height: min(100dvh, 700px);
-  display: grid;
+}
+
+@media screen and (min-height: 701px) {
+  section {
+    height: 700px;
+  }
 }

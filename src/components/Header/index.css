@@ -33,7 +33,7 @@ nav {
 }
 nav a {
   position: relative;
-  padding: 0.2em 0.6em;
+  padding: 0.1em 0.6em;
   color: var(--clr-gray);
   border-radius: 5px;
   transition: all 0.2s ease-in;
@@ -62,7 +62,7 @@ nav a:hover::after {
   display: none;
 }
 .cross-btn {
-  padding: 0.02em 0.33em;
+  padding: 0.03em 0.33em;
 }
 
 @media screen and (max-width: 768px) {
