@@ -21,6 +21,6 @@
     grid-template-columns: 1fr;
   }
   .hero-image-container {
-    display: none;
+    /* display: none; */
   }
 }

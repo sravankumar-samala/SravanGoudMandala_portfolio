@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --clr-header-bg: rgba(0, 0, 0, 0.61);
+  --clr-header-bg: rgba(0, 0, 0, 0.377);
 }
 
 * {
