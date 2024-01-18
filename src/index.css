@@ -12,7 +12,7 @@
 
   --clr-gray: #dbdbdb;
   --clr-gray-dark: #3a3a3a;
-  --clr-header-bg: rgba(0, 0, 0, 0.699);
+  --clr-header-bg: rgba(0, 0, 0, 0.77);
   --clr-heading: #0c356a;
   --clr-light-accent: #0174be;
   --clr-yellow: #ffc436;
@@ -46,7 +46,6 @@ button {
 }
 .app-container {
   min-height: 100dvh;
-  /* padding-inline: clamp(1em, 1.5vw, 2em); */
 }
 section {
   min-height: 100dvh;
