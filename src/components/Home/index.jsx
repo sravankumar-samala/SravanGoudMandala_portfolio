@@ -5,17 +5,22 @@ export default function Home() {
     <section id="home" className="hero-container">
       <div className="hero-content-container">
         <div className="hero-content-wrapper">
-          <h1>Sravan Goud Mandala</h1>
-          <p>
-            With a desire to serve the public, I began my political career with
-            the Congress party. Despite the hurdles at every turn, I stand
-            before the people today as a devoted leader, carrying on without
-            hesitation with the point of political welfare. I will be eternally
-            thankful to my people who worked so hard to get to this point, as
-            well as the officers who contributed to making it happen. I shall
-            continue to strive for the common good.
+          <p>Hello, this is</p>
+          <h1 className="hero-title">Sravan Goud Mandala</h1>
+          <p className="hero-description">
+            I started my political career with the Congress party, aiming to
+            serve the public. Despite facing challenges, I stand before you
+            today as a dedicated leader. I am thankful to the people and
+            officers who supported me. I will keep working for the common good.
           </p>
-          <button type="button">Contact Me</button>
+          <div className="hero-buttons">
+            <button type="button" className="hero-btn contact-me-btn">
+              Contact Me
+            </button>
+            <button type="button" className="hero-btn know-more-btn">
+              Know more
+            </button>
+          </div>
         </div>
       </div>
       <div className="hero-image-container">
