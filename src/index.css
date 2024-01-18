@@ -48,11 +48,6 @@ button {
   min-height: 100dvh;
 }
 section {
-  min-height: 100dvh;
+  height: min(100dvh, 700px);
   display: grid;
-}
-@media screen and (max-width: 768px) {
-  section {
-    min-height: 80dvh;
-  }
 }

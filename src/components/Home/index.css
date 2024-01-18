@@ -7,7 +7,7 @@
   align-self: center;
 }
 .hero-content-wrapper {
-  width: min(500px, 90%);
+  width: min(700px, 90%);
   margin: 0 auto;
 }
 .hero-content-wrapper p:first-child {
@@ -23,7 +23,23 @@
 .hero-title {
   margin-block: 0;
   font-family: "Noto Serif Display", serif;
-  font-size: clamp(1.75rem, 3.5vw, 3.7rem);
+  font-size: clamp(1.75rem, 3.2vw, 3.7rem);
+}
+.hero-image-container {
+  position: relative;
+}
+.hero-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--clr-gray),
+    transparent,
+    transparent
+  );
 }
 .hero-image-container img {
   height: 100%;
@@ -35,6 +51,7 @@
 .hero-btn a {
   color: var(--clr-gray);
   font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 .hero-buttons {
