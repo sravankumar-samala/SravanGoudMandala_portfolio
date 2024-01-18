@@ -19,7 +19,10 @@ export default function Home() {
         </div>
       </div>
       <div className="hero-image-container">
-        <img src="src/assets/hero-img.jpeg" alt="Profile picture" />
+        <img
+          src="https://res.cloudinary.com/dwddin0nz/image/upload/v1705566327/hero-img_vxkxqq.jpg"
+          alt="Profile picture"
+        />
       </div>
     </section>
   );
