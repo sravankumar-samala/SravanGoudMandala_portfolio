@@ -15,11 +15,11 @@ export default function Home() {
           </p>
           <div className="hero-buttons">
             <button type="button" className="hero-btn contact-me-btn">
-              Contact Me
+              <a href="#contact">Contact Me</a>
             </button>
-            <button type="button" className="hero-btn know-more-btn">
-              Know more
-            </button>
+            {/* <button type="button" className="hero-btn know-more-btn">
+              <a href="#about">Know more</a>
+            </button> */}
           </div>
         </div>
       </div>

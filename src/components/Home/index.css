@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 60% 1fr;
   place-items: stretch;
-  background-color: #efefef;
 }
 .hero-content-container {
   align-self: center;
@@ -15,16 +14,16 @@
   margin-block-end: 0;
   font-weight: 600;
   font-family: "Noto Serif Display", serif;
-  /* text-align: center; */
+  font-size: clamp(1.25rem, 2vw, 2rem);
 }
 .hero-description {
-  font-size: clamp(0.85rem, 1.3vw, 1.7rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.7rem);
+  color: var(--clr-gray-dark);
 }
 .hero-title {
   margin-block: 0;
   font-family: "Noto Serif Display", serif;
-  font-size: clamp(1.8rem, 3vw, 3.7rem);
-  /* text-align: center; */
+  font-size: clamp(1.75rem, 3.5vw, 3.7rem);
 }
 .hero-image-container img {
   height: 100%;
@@ -32,13 +31,17 @@
 }
 .hero-btn {
   background-color: black;
-  color: white;
+}
+.hero-btn a {
+  color: var(--clr-gray);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .hero-buttons {
   display: flex;
-  gap: 1em;
+  /* gap: 1em; */
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-block-start: 2em;
 }
 
@@ -46,7 +49,6 @@
   .hero-container {
     grid-template-columns: 1fr;
     position: relative;
-    padding-top: 2em;
   }
   .hero-content-wrapper {
     text-align: center;
