@@ -1,25 +1,24 @@
 import Header from "./components/Header";
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="app-container">
       <Header />
       <Home />
-      <section id="about">
-        <h1>About</h1>
-      </section>
+      <About />
       <section id="career">
-        <h1>Career</h1>
+        <h1 className="section-heading">Career</h1>
       </section>
       <section id="contact">
-        <h1>Contact</h1>
+        <h1 className="section-heading">Contact</h1>
       </section>
       <section id="activities">
-        <h1>Activities</h1>
+        <h1 className="section-heading">Activities</h1>
       </section>
       <section id="gallary">
-        <h1>Gallary</h1>
+        <h1 className="section-heading">Gallary</h1>
       </section>
     </div>
   );
