@@ -10,7 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-family: "Poppins", sans-serif;
 
-  --clr-gray: #dbdbdb;
+  --clr-gray: #e4e4e4;
   --clr-gray-dark: #3a3a3a;
   --clr-header-bg: rgba(0, 0, 0, 0.77);
   --clr-heading: #0c356a;
@@ -25,6 +25,7 @@
 }
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--clr-gray);
 }
 img {
@@ -49,11 +50,13 @@ button {
   min-height: 100dvh;
 }
 section {
-  height: min(100dvh, 700px);
+  /* height: min(100dvh, 700px); */
+  min-height: 100dvh;
 }
-
-@media screen and (min-height: 701px) {
-  section {
-    height: 700px;
-  }
+#about {
+  background-color: black;
+  color: white;
+}
+#about h1 {
+  margin-block: 0;
 }
