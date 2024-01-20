@@ -4,6 +4,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --fs-large: clamp(1.75rem, 3.2vw, 3.7rem);
+  --fs-medium: clamp(1.3rem, 2.2vw, 2.5rem);
+
   font-synthesis: none;
   --ff-noto-serif: "Noto Serif Display", serif;
   text-rendering: optimizeLegibility;
@@ -37,6 +40,9 @@ a {
   color: black;
   text-decoration: inherit;
 }
+ul {
+  padding-left: 0;
+}
 
 button {
   border-radius: 5px;
@@ -62,10 +68,8 @@ section:nth-child(odd) {
   background-color: black;
   color: var(--clr-gray);
 }
-
 .section-heading {
-  font-size: clamp(1.75rem, 3.2vw, 3.7rem);
-  /* text-align: center; */
+  font-size: var(--fs-large);
   justify-self: center;
   margin-top: 0;
   position: relative;
@@ -85,6 +89,15 @@ section:nth-child(odd) {
     var(--clr-gray),
     transparent
   );
+}
+
+.section-sub-heading {
+  font-size: var(--fs-medium);
+  font-weight: 600;
+  justify-self: center;
+  margin-block: 0;
+  text-shadow: 2px 2px 5px black;
+  font-family: var(--ff-noto-serif);
 }
 
 section:nth-child(even) .section-heading::before {

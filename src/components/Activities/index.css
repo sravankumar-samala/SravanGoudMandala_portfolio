@@ -1,0 +1,30 @@
+.activities-container {
+  padding: clamp(1em, 2vw, 2em);
+  display: grid;
+  gap: 2em;
+  color: var(--clr-gray);
+}
+
+.activities-container .services-container {
+  background-color: black;
+}
+
+.activities-container
+  > .services-container:nth-child(odd)
+  .services-content
+  .content-img-container {
+  order: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .services-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .activities-container
+    > .services-container:nth-child(odd)
+    .services-content
+    .content-img-container {
+    order: -1;
+  }
+}

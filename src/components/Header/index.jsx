@@ -80,13 +80,14 @@ const navigationMenuItems = [
     id: "#about",
     name: "About",
   },
-  {
-    id: "#career",
-    name: "Career",
-  },
+
   {
     id: "#contact",
     name: "Contact",
+  },
+  {
+    id: "#career",
+    name: "Career",
   },
   {
     id: "#activities",
